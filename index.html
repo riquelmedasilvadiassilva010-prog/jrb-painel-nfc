@@ -1,0 +1,92 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a1830"><title>JRB Painel — Administração NFC</title><style>
+:root{font-family:Inter,system-ui,-apple-system,Arial,sans-serif;color:#edf4ff;background:#080f21;font-synthesis:none}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0,#173e71 0,transparent 42%),linear-gradient(#09172f,#080f21 60%);color:#edf4ff}button,input,select{font:inherit}a{color:#8dcbff}button{cursor:pointer}button:disabled{opacity:.55;cursor:not-allowed}.top{max-width:1180px;margin:0 auto;padding:22px 20px;display:flex;align-items:center;justify-content:space-between;gap:10px}.brand{display:flex;align-items:center;gap:13px;font-weight:800;letter-spacing:-.6px}.mark{display:grid;place-items:center;background:#1758a1;border:1px solid #498bdd;border-radius:17px;width:54px;height:54px;font-weight:900;font-size:22px;box-shadow:0 6px 35px #146ec633}.dim{color:#9db1ce}.small{font-size:13px}.wrap{max-width:1180px;margin:auto;padding:10px 20px 70px}.panel{background:#0f1d36;border:1px solid #2a4265;border-radius:21px;padding:24px;margin-bottom:17px;box-shadow:0 14px 40px #02091338}.narrow{max-width:600px;margin:32px auto}.eyebrow{font-size:12px;color:#79c1ff;letter-spacing:1.5px;text-transform:uppercase;font-weight:800}.hero-title{font-size:clamp(30px,5vw,43px);letter-spacing:-1.4px;line-height:1.1;margin:12px 0}.subtitle{line-height:1.65;color:#aabbd2}.tabs{display:flex;overflow:auto;gap:8px;margin:21px 0 18px;padding:3px 0}.tabs button{white-space:nowrap;background:#142746;color:#cfe3ff;border:1px solid #29446c;border-radius:11px;padding:12px 16px;font-weight:700}.tabs button.on,.btn.primary{background:#147be4;color:white;border-color:#147be4}.btn{background:#172a49;border:1px solid #38577e;border-radius:11px;color:#eaf4ff;padding:12px 16px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:7px;text-decoration:none}.btn:hover,.tabs button:hover{filter:brightness(1.16)}.btn.ghost{background:transparent}.btn.danger{background:#46212e;border-color:#7a3b4a}.row{display:flex;align-items:center;gap:11px;flex-wrap:wrap}.between{justify-content:space-between}.grow{flex:1}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.stat{background:#101f39;border:1px solid #2b446a;padding:20px;border-radius:17px}.stat b{display:block;font-size:clamp(24px,4vw,35px);margin-top:9px}.stat span{font-size:13px;color:#9eb2ce}.field{width:100%;border:1px solid #39577e;background:#0a1830;color:#f2f7ff;border-radius:11px;padding:14px 13px;outline:0}.field:focus{border-color:#68b8ff;box-shadow:0 0 0 3px #1969ba33}.label{font-size:13px;color:#aec3df;font-weight:650;margin:12px 0 7px;display:block}.hint{font-size:13px;line-height:1.6;color:#a2b7d1}.message{padding:13px 16px;background:#193455;border:1px solid #355d8d;border-radius:11px;margin:15px 0;color:#dbecff}.error{background:#471f2a;border-color:#8e4554;color:#ffd7df}.success{background:#163d36;border-color:#377c60;color:#aaffde}.hidden{display:none!important}.badge{display:inline-flex;border-radius:30px;background:#153e34;border:1px solid #376b5b;color:#8bebca;font-size:12px;font-weight:800;padding:5px 11px}.badge.off{background:#453821;color:#ffe3a7;border-color:#6c5630}.table-scroll{overflow:auto;width:100%}table{width:100%;border-collapse:collapse;min-width:690px}td,th{text-align:left;border-bottom:1px solid #263a5b;padding:14px 10px;font-size:13px}th{color:#9eb6d6;font-size:12px}td{color:#e1edff}.mini{padding:7px 10px;font-size:12px}.results{display:grid;gap:9px;margin:12px 0}.result{background:#152a48;border:1px solid #304c71;border-radius:14px;padding:15px;text-align:left;color:#e7f1ff;display:flex;align-items:center;gap:12px;width:100%}.result:hover{background:#1b3b64}.result .icon{font-size:24px}.result strong{display:block}.result small{display:block;color:#acbdd5;margin-top:4px}.bar-chart{display:flex;align-items:flex-end;gap:5px;height:180px;padding:10px 0 0;border-bottom:1px solid #365071}.bar{background:linear-gradient(0deg,#1162d3,#54b9ff);border-radius:5px 5px 0 0;flex:1;min-height:3px}.bars-label{display:flex;justify-content:space-between;margin-top:8px;color:#a9bddd;font-size:12px}.footer{text-align:center;color:#8299ba;font-size:12px;padding:30px}.plate-code{font-weight:900;color:#9cd4ff}.step{color:#88b9ed;font-weight:700;font-size:13px;margin:20px 0}.top-link{text-decoration:none;color:#b4d9ff}.login-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.illustration{display:grid;place-items:center;margin:26px auto 0;width:75px;height:75px;border-radius:25px;background:linear-gradient(#2488ed,#124c8c);font-size:26px;font-weight:900;box-shadow:0 14px 56px #207fe244}.center{text-align:center}.copy{overflow-wrap:anywhere;font-size:12px;color:#93caff}.spaced{margin-top:20px}@media(max-width:700px){.wrap{padding:5px 15px 60px}.top{padding:17px}.panel{padding:18px;border-radius:18px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.login-grid{grid-template-columns:1fr}.row.mobile-stack>.btn{flex:1}.hero-title{font-size:32px}.top h1{font-size:18px}.stat{padding:15px}}
+
+</style></head><body>
+<header class="top"><div class="brand"><span class="mark">JRB</span><div><div style="font-size:20px">Painel NFC</div><div class="dim small">Administração de plaquinhas</div></div></div><span class="badge">PAINEL PRIVADO</span></header>
+<main class="wrap">
+<div id="setup" class="message error hidden">⚠️ Configuração do Supabase incompleta. Verifique a URL e a chave pública do projeto.</div>
+<section id="loginBox" class="panel narrow"><span class="eyebrow">Acesso restrito</span><h1 class="hero-title">Entrar no JRB Painel</h1><p class="subtitle">Use o e-mail e a senha de administrador cadastrados no Supabase.</p><form id="loginForm"><label class="label" for="email">E-mail</label><input class="field" type="email" id="email" required autocomplete="username" placeholder="seuemail@exemplo.com"><label class="label" for="password">Senha</label><input class="field" type="password" id="password" required autocomplete="current-password" placeholder="Sua senha"><button class="btn primary spaced" type="submit">Entrar no painel</button></form><p id="loginStatus" class="message hidden"></p></section>
+<section id="dashboard" class="hidden">
+ <div class="row between"><div><span class="eyebrow">Central administrativa</span><h1 class="hero-title">Visão do negócio</h1><p class="subtitle">Gerencie os NFCs e acompanhe os acessos em tempo real.</p></div><button class="btn ghost" id="logout">Sair</button></div>
+ <nav class="tabs"><button class="on" data-page="overview">📊 Visão geral</button><button data-page="plates">📲 Plaquinhas</button><button data-page="companies">🏪 Empresas</button><button data-page="stats">📈 Estatísticas</button></nav>
+ <div id="opStatus" class="message hidden"></div>
+ <section id="overview" class="page"><div class="grid" id="metrics"></div><div class="panel spaced"><h2>Acessos registrados — últimos 30 dias</h2><div class="bar-chart" id="chart"></div><div class="bars-label"><span>30 dias atrás</span><span>Hoje</span></div><p class="hint">Um acesso é a abertura do link da plaquinha, não uma avaliação concluída.</p></div><div class="panel"><h2>Últimas plaquinhas cadastradas</h2><div id="recent"></div></div></section>
+ <section id="plates" class="page hidden"><div class="panel"><h2>Preparar plaquinhas em lote</h2><p class="hint">Gere os códigos ANTES de gravar os chips NFC. Cada chip recebe um endereço fixo e exclusivo.</p><div class="row"><div class="grow"><label class="label">Prefixo</label><input id="prefix" class="field" value="JRB" maxlength="8"></div><div class="grow"><label class="label">Quantidade</label><input id="qty" class="field" value="5" type="number" min="1" max="100"></div></div><div class="row mobile-stack"><button class="btn primary" id="generate">+ Gerar códigos</button><button class="btn" id="csv">Exportar CSV</button></div></div><div class="panel"><div class="row between"><h2>Minhas plaquinhas</h2><button class="btn mini" id="reload">Atualizar</button></div><div class="table-scroll" id="plateTable"></div></div></section>
+ <section id="companies" class="page hidden"><div class="panel"><h2>Empresas vinculadas</h2><p class="hint">Vinculadas automaticamente depois da seleção na página NFC.</p><div class="table-scroll" id="companyTable"></div></div></section>
+ <section id="stats" class="page hidden"><div class="panel"><h2>Visitas por plaquinha</h2><p class="hint">O contador contabiliza acessos ao link da JRB, não identifica pessoas únicas nem confirma avaliação publicada.</p><div class="table-scroll" id="statTable"></div></div></section>
+</section></main><footer class="footer">JRB Painel NFC • Gerenciamento de plaquinhas e avaliações</footer>
+<script>
+// Somente dados públicos, próprios para frontend. Nunca inclua sb_secret_ ou service_role.
+window.JRB_CONFIG = {
+  "supabaseUrl": "https://zfdoitaggbwbzwyzkhub.supabase.co",
+  "publishableKey": "sb_publishable_xcNdiOjH7uKAz7eb3svDNw_h_pci6e8"
+};
+
+</script><script>
+/* Cliente JRB — somente chave publica no navegador. */
+(function(){
+ const cfg=window.JRB_CONFIG||{};
+ const store='jrb_admin_session_v5';
+ function base(){return String(cfg.supabaseUrl||'').replace(/\/$/,'')}
+ function ready(){return /^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(base()) && String(cfg.publishableKey||'').length>20 && !String(cfg.publishableKey).includes('COLE_')}
+ function get(){try{return JSON.parse(localStorage.getItem(store)||'null')}catch{return null}}
+ function set(x){if(x)localStorage.setItem(store,JSON.stringify(x));else localStorage.removeItem(store)}
+ async function login(email,password){
+  if(!ready())throw Error('Configure config.js com a URL e a chave publica do Supabase.');
+  const r=await fetch(base()+'/auth/v1/token?grant_type=password',{method:'POST',headers:{'Content-Type':'application/json','apikey':cfg.publishableKey},body:JSON.stringify({email,password})});
+  const p=await r.json();if(!r.ok)throw Error(p.msg||p.error_description||p.error||'Falha no login.');
+  set(p);return p;
+ }
+ async function refresh(){
+  const current=get();if(!current?.refresh_token)throw Error('Faca login para continuar.');
+  const r=await fetch(base()+'/auth/v1/token?grant_type=refresh_token',{method:'POST',headers:{'Content-Type':'application/json','apikey':cfg.publishableKey},body:JSON.stringify({refresh_token:current.refresh_token})});
+  const p=await r.json();if(!r.ok){set(null);throw Error('Sessao expirada. Entre novamente.')}set(p);return p;
+ }
+ async function token(){
+  let p=get();if(!p?.access_token)throw Error('Faca login para continuar.');
+  // Renova token antes da expiracao, sem pedir outra senha.
+  if(p.expires_at && Date.now()/1000>p.expires_at-90)p=await refresh();
+  return p.access_token;
+ }
+ async function api(action,payload={}){
+  if(!ready())throw Error('Configure config.js primeiro.');
+  const r=await fetch(base()+'/functions/v1/jrb-nfc',{
+   method:'POST',headers:{'Content-Type':'application/json','apikey':cfg.publishableKey,'Authorization':'Bearer '+await token()},
+   body:JSON.stringify({action,...payload})
+  });
+  let p;try{p=await r.json()}catch{throw Error('Funcao jrb-nfc nao respondeu em JSON. Confira se foi publicada.')}
+  if(!r.ok)throw Error(p.error||'Erro na operacao ('+r.status+').');return p;
+ }
+ function goLink(c){return base()+'/functions/v1/jrb-nfc?placa='+encodeURIComponent(c)}
+ function escapeHTML(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+ window.JRB={ready,get,login,logout:()=>set(null),api,goLink,escapeHTML};
+})();
+
+</script><script>
+(()=>{
+const $=id=>document.getElementById(id);const E=JRB.escapeHTML;let plates=[],daily=[],summary=[];
+function status(msg,error=false){$('opStatus').textContent=msg;$('opStatus').className='message'+(error?' error':'');}
+function authScreen(show){$('dashboard').classList.toggle('hidden',!show);$('loginBox').classList.toggle('hidden',show)}
+function page(name){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('hidden',x.id!==name));document.querySelectorAll('[data-page]').forEach(x=>x.classList.toggle('on',x.dataset.page===name));}
+const fmt=x=>new Intl.NumberFormat('pt-BR').format(Number(x)||0);
+function badge(p){return '<span class="badge '+(p.url_avaliacao?'':'off')+'">'+(p.url_avaliacao?'Ativa':'Disponível')+'</span>'}
+function table(cols,rows){return '<table><thead><tr>'+cols.map(c=>'<th>'+E(c)+'</th>').join('')+'</tr></thead><tbody>'+rows.join('')+'</tbody></table>'}
+function render(){const active=plates.filter(x=>x.url_avaliacao).length,total=plates.reduce((s,p)=>s+Number(p.acessos||0),0);
+$('metrics').innerHTML=[['Total de placas',plates.length],['Ativadas',active],['Disponíveis',plates.length-active],['Acessos totais',total]].map(([t,n])=>'<div class="stat"><span>'+E(t)+'</span><b>'+fmt(n)+'</b></div>').join('');
+$('recent').innerHTML=plates.slice(0,5).map(p=>'<div class="row between" style="padding:12px 0;border-bottom:1px solid #283d5c"><div><b class="plate-code">'+E(p.codigo)+'</b><div class="hint">'+E(p.nome_empresa||'Aguardando ativação')+'</div></div>'+badge(p)+'</div>').join('')||'<p class="hint">Ainda não há plaquinhas. Gere seus primeiros códigos em Plaquinhas.</p>';
+let counts={};daily.forEach(d=>counts[d.dia]=Number(d.total)||0);let values=[];for(let i=29;i>=0;i--){let dt=new Date();dt.setDate(dt.getDate()-i);let day=[dt.getFullYear(),String(dt.getMonth()+1).padStart(2,'0'),String(dt.getDate()).padStart(2,'0')].join('-');values.push(counts[day]||0)}const max=Math.max(1,...values);$('chart').innerHTML=values.map((n,i)=>'<div class="bar" title="'+n+' acesso(s)" style="height:'+Math.max(2,100*n/max)+'%"></div>').join('');
+$('plateTable').innerHTML=table(['Código','Empresa','Status','Acessos','Ativação','Endereço NFC'],plates.map(p=>'<tr><td class="plate-code">'+E(p.codigo)+'</td><td>'+E(p.nome_empresa||'—')+'</td><td>'+badge(p)+'</td><td>'+fmt(p.acessos)+'</td><td><a class="btn mini" href="ativar.html?placa='+encodeURIComponent(p.codigo)+'">'+(p.url_avaliacao?'Ver':'Ativar')+'</a></td><td><button class="btn mini copyLink" data-code="'+E(p.codigo)+'">Copiar link</button></td></tr>'));
+$('companyTable').innerHTML=table(['Empresa','Endereço','Código','Ativada em'],plates.filter(p=>p.url_avaliacao).map(p=>'<tr><td>'+E(p.nome_empresa)+'</td><td>'+E(p.endereco_empresa||'—')+'</td><td>'+E(p.codigo)+'</td><td>'+E(p.ativada_em?new Date(p.ativada_em).toLocaleDateString('pt-BR'):'—')+'</td></tr>'));
+const byCode=new Map(summary.map(x=>[x.codigo,x]));$('statTable').innerHTML=table(['Código','Empresa','Hoje','7 dias','30 dias','Total'],plates.map(p=>{const s=byCode.get(p.codigo)||{};return '<tr><td>'+E(p.codigo)+'</td><td>'+E(p.nome_empresa||'—')+'</td><td>'+fmt(s.hoje)+'</td><td>'+fmt(s.sete_dias)+'</td><td>'+fmt(s.trinta_dias)+'</td><td>'+fmt(p.acessos)+'</td></tr>'}));
+}
+async function load(){try{status('Carregando dados reais do Supabase...');const d=await JRB.api('list');plates=d.plates||[];daily=d.daily||[];summary=d.summary||[];render();$('opStatus').classList.add('hidden')}catch(e){status(e.message,true);if(/conta administradora|login|sessao/i.test(e.message))authScreen(false)}}
+$('loginForm').onsubmit=async(e)=>{e.preventDefault();$('loginStatus').textContent='Entrando...';$('loginStatus').className='message';try{await JRB.login($('email').value.trim(),$('password').value);authScreen(true);await load()}catch(err){$('loginStatus').textContent=err.message;$('loginStatus').className='message error'}};
+$('logout').onclick=()=>{JRB.logout();authScreen(false)};
+document.querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>page(b.dataset.page));
+$('generate').onclick=async()=>{try{const d=await JRB.api('generate',{prefix:$('prefix').value.trim(),qty:Number($('qty').value)});await load();page('plates');status('Geradas '+d.codes.length+' plaquinhas. Agora copie e grave o endereço NFC de cada uma.')}catch(e){status(e.message,true)}};
+$('reload').onclick=load;
+$('plateTable').addEventListener('click',async(e)=>{let b=e.target.closest('.copyLink');if(!b)return;const link=JRB.goLink(b.dataset.code);try{await navigator.clipboard.writeText(link);status('Link copiado: '+link)}catch{window.prompt('Copie o endereço fixo NFC:',link)}});
+$('csv').onclick=()=>{let csv='codigo;empresa;status;acessos;url_nfc\n'+plates.map(p=>[p.codigo,(p.nome_empresa||'').replaceAll(';',','),p.url_avaliacao?'ativada':'disponivel',p.acessos,JRB.goLink(p.codigo)].join(';')).join('\n');const blob=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='jrb_plaquinhas.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2500)};
+if(!JRB.ready())$('setup').classList.remove('hidden');if(JRB.get()){authScreen(true);load()}else authScreen(false);
+})();
+</script></body></html>
